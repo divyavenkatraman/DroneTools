@@ -1,0 +1,8 @@
+import pandas as pd
+
+class FileReader:
+	def read_csv(self, fname):
+		pd.read_csv(fname)
+	
+f = FileReader()
+print(f.read_csv("ground_stations.csv").empty)
